@@ -1,0 +1,357 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gridz\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-21 18:08-0600\n"
+"PO-Revision-Date: 2015-03-02 00:24+0100\n"
+"Last-Translator: \n"
+"Language-Team: AppsWP.net\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 1.7.4\n"
+
+#: 404.php:10
+msgid "Error 404: Page not found"
+msgstr "Erreur 404 : Page introuvable"
+
+#: 404.php:13
+msgid "Page has either been removed or does not exist. Please try using the search"
+msgstr "Cette page a été supprimée ou n'a jamais existé. Merci d'essayer une autre recherche"
+
+#: comments.php:11
+msgid "One Comment"
+msgstr "Un commentaire"
+
+#: comments.php:20
+msgid "Comments are closed"
+msgstr "Les commentaires sont clos"
+
+#: content-grid.php:28 content.php:21 image.php:24
+msgid "By "
+msgstr "Par"
+
+#: content-none.php:8
+msgid "No posts found here"
+msgstr "Aucun article trouvé"
+
+#: content-none.php:11
+msgid "Post has either been removed or does not exist. Please try using the search"
+msgstr "Cet article a été supprimée ou n'a jamais existé. Merci d'essayer une autre recherche"
+
+#: content.php:24 image.php:27
+msgid "Posted in: "
+msgstr "Posté dans :"
+
+#: content.php:24 image.php:27
+msgid "Tagged in: "
+msgstr "Taggé dans :"
+
+#: content.php:30
+msgid "Read more"
+msgstr "Lire la suite"
+
+#: functions.php:24
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: functions.php:117
+msgid "Primary Sidebar"
+msgstr "Sidebar principale"
+
+#: functions.php:125
+msgid "Footer Widget Area 1"
+msgstr "Widget de pied de page 1"
+
+#: functions.php:133
+msgid "Footer Widget Area 2"
+msgstr "Widget de pied de page 2"
+
+#: functions.php:141
+msgid "Footer Widget Area 3"
+msgstr "Widget de pied de page 3"
+
+#: functions.php:202 functions.php:214
+msgid "Select Page"
+msgstr "Sélectionner un page"
+
+#: functions.php:442
+msgid "Copyright &copy;"
+msgstr ""
+
+#: functions.php:478
+#, php-format
+msgid "View all posts by %s"
+msgstr "Voir tous les messages postés par %s"
+
+#: functions.php:487
+msgid "0 Comments"
+msgstr "0 Commentaires"
+
+#: functions.php:487
+msgid "1 comment"
+msgstr "1 commentaire"
+
+#: functions.php:487
+#, php-format
+msgid "% comments"
+msgstr "% commentaires"
+
+#: functions.php:489
+msgid "0"
+msgstr ""
+
+#: functions.php:489
+msgid "1"
+msgstr ""
+
+#: functions.php:489
+msgid "%"
+msgstr ""
+
+#: functions.php:500 functions.php:533
+msgid "Like"
+msgstr ""
+
+#: functions.php:500 functions.php:533
+msgid "Likes"
+msgstr ""
+
+#: functions.php:501
+msgid "Like this"
+msgstr ""
+
+#: functions.php:555
+msgid "Read more..."
+msgstr "Lire la suite..."
+
+#: functions.php:622
+msgid "First"
+msgstr "Première"
+
+#: functions.php:657
+msgid "Last"
+msgstr "Dernière"
+
+#: functions.php:678
+msgid "Published In %title"
+msgstr "Publié dans %title"
+
+#: functions.php:680
+msgid "<span class=\"genericon-previous\"></span>"
+msgstr ""
+
+#: functions.php:681
+msgid "<span class=\"genericon-next\"></span>"
+msgstr ""
+
+#: functions.php:725
+#, php-format
+msgid "commented on %s"
+msgstr "Commenté dans %s"
+
+#: functions.php:726
+msgid "Reply"
+msgstr "Répondre"
+
+#: functions.php:729
+msgid "Your comment is awaiting moderation"
+msgstr "Vous avez des commentaires en attente de modération"
+
+#: searchform.php:8
+msgid "Search"
+msgstr "Rechercher"
+
+#: inc/admin/theme-options.php:29
+msgid "Theme Options"
+msgstr "Options du thème "
+
+#: inc/admin/theme-options.php:139
+msgid "2"
+msgstr ""
+
+#: inc/admin/theme-options.php:140
+msgid "3"
+msgstr ""
+
+#: inc/admin/theme-options.php:141
+msgid "4"
+msgstr ""
+
+#: inc/admin/theme-options.php:148
+msgid "left"
+msgstr ""
+
+#: inc/admin/theme-options.php:149
+msgid "right"
+msgstr ""
+
+#: inc/admin/theme-options.php:156
+msgid "Helvetica, Arial Regular"
+msgstr ""
+
+#: inc/admin/theme-options.php:157
+msgid "Helvetica, Arial Bold"
+msgstr ""
+
+#: inc/admin/theme-options.php:158
+msgid "Pacifico"
+msgstr ""
+
+#: inc/admin/theme-options.php:159
+msgid "Comfortaa Bold"
+msgstr ""
+
+#: inc/admin/theme-options.php:160
+msgid "Chivo Black"
+msgstr ""
+
+#: inc/admin/theme-options.php:161
+msgid "Source Sans Pro Extra Light"
+msgstr ""
+
+#: inc/admin/theme-options.php:162
+msgid "Source Sans Pro Light"
+msgstr ""
+
+#: inc/admin/theme-options.php:163
+msgid "Source Sans Pro Regular"
+msgstr ""
+
+#: inc/admin/theme-options.php:164
+msgid "Source Sans Pro Bold"
+msgstr ""
+
+#: inc/admin/theme-options.php:174
+msgid "Fonts & Colors"
+msgstr ""
+
+#: inc/admin/theme-options.php:175
+msgid "Logo & Favicon"
+msgstr ""
+
+#: inc/admin/theme-options.php:176
+msgid "Homepage"
+msgstr ""
+
+#: inc/admin/theme-options.php:177
+msgid "Post Settings"
+msgstr ""
+
+#: inc/admin/theme-options.php:188
+msgid "Default settings restored"
+msgstr ""
+
+#: inc/admin/theme-options.php:193
+#, php-format
+msgid "%s Theme Options"
+msgstr ""
+
+#: inc/admin/theme-options.php:216
+msgid "Color Scheme"
+msgstr ""
+
+#: inc/admin/theme-options.php:222
+msgid "Header Color"
+msgstr ""
+
+#: inc/admin/theme-options.php:228
+msgid "Content Font"
+msgstr ""
+
+#: inc/admin/theme-options.php:238
+msgid "Site Title Font"
+msgstr ""
+
+#: inc/admin/theme-options.php:248
+msgid "Site Title Font Size (in px)"
+msgstr ""
+
+#: inc/admin/theme-options.php:255
+msgid "Post Title Font"
+msgstr ""
+
+#: inc/admin/theme-options.php:265
+msgid "Post Title Font Size (in px)"
+msgstr ""
+
+#: inc/admin/theme-options.php:272
+msgid "Widget Title Font"
+msgstr ""
+
+#: inc/admin/theme-options.php:282
+msgid "Widget Title Font Size (in px)"
+msgstr ""
+
+#: inc/admin/theme-options.php:294
+msgid "Custom Logo"
+msgstr ""
+
+#: inc/admin/theme-options.php:297
+msgid "Upload Logo"
+msgstr ""
+
+#: inc/admin/theme-options.php:301
+msgid "Custom Favicon"
+msgstr ""
+
+#: inc/admin/theme-options.php:304
+msgid "Upload Favicon"
+msgstr ""
+
+#: inc/admin/theme-options.php:313
+msgid "Number of grid columns"
+msgstr ""
+
+#: inc/admin/theme-options.php:323
+msgid "Show sidebar along with masonry"
+msgstr ""
+
+#: inc/admin/theme-options.php:334
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/admin/theme-options.php:344
+msgid "Show Likes"
+msgstr ""
+
+#: inc/admin/theme-options.php:350
+msgid "Show Categories"
+msgstr ""
+
+#: inc/admin/theme-options.php:356
+msgid "Show Tags"
+msgstr ""
+
+#: inc/admin/theme-options.php:362
+msgid "Show Post Navigation"
+msgstr ""
+
+#: inc/admin/theme-options.php:369
+msgid "Save Changes"
+msgstr ""
+
+#: inc/admin/theme-options.php:372
+msgid "Reset Settings"
+msgstr ""
+
+#: inc/admin/theme-options.php:377
+msgid "PayPal - The safer, easier way to pay online!"
+msgstr ""
+
+#: inc/admin/theme-options.php:377
+msgid "Donate via PayPal"
+msgstr ""
+
+#: inc/admin/theme-options.php:414
+msgid "Favicon image cannot exceed 16 x 16 pixels"
+msgstr ""
+
+#: inc/admin/theme-options.php:415
+msgid "Invalid favicon image URL"
+msgstr ""
+
+#: inc/admin/theme-options.php:422
+msgid "Invalid logo image URL"
+msgstr ""
