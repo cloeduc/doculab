@@ -1,0 +1,291 @@
+{
+    "key": "group_54fca13ef12c9",
+    "title": "Slider",
+    "fields": [
+        {
+            "key": "field_54fca145c288a",
+            "label": "Affichager du slider",
+            "name": "afficher_le_slider",
+            "prefix": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "home_page": "Homepage",
+                "page": "Pages descriptives",
+                "post": "Tutoriels, Outils, Mots, Projets...."
+            },
+            "default_value": {
+                "home_page": "Homepage"
+            },
+            "layout": "vertical"
+        },
+        {
+            "key": "field_54fca860c78e1",
+            "label": "Ajouter une slide",
+            "name": "slides",
+            "prefix": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Ajouter un \u00e9l\u00e9ment",
+            "min": 1,
+            "max": "",
+            "layouts": [
+                {
+                    "key": "54fca8797f261",
+                    "name": "slide_interne",
+                    "label": "A partir d'une ressource existante",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_54fcaa9bc78e4",
+                            "label": "Illustration",
+                            "name": "illustration",
+                            "prefix": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": 1024,
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_54fcaac7c78e5",
+                            "label": "Ressource li\u00e9e",
+                            "name": "ressource_liee",
+                            "prefix": "",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "tutoriaux",
+                                "projets",
+                                "lexique",
+                                "outils"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "elements": "",
+                            "max": 1,
+                            "return_format": "object"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "54fcaa3fc78e3",
+                    "name": "slide_manuel",
+                    "label": "Saisir manuellement le slide",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_54fcab7faf35d",
+                            "label": "Titre",
+                            "name": "titre",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_54fcab92af35e",
+                            "label": "Courte description",
+                            "name": "courte_description",
+                            "prefix": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": 255,
+                            "rows": "",
+                            "new_lines": "wpautop",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_54fcaba8af35f",
+                            "label": "Illustration",
+                            "name": "illustration",
+                            "prefix": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": 1024,
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_54fcabc2af360",
+                            "label": "Lien",
+                            "name": "lien",
+                            "prefix": "",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "button_label": "Ajouter un lien",
+                            "min": "",
+                            "max": "",
+                            "layouts": [
+                                {
+                                    "key": "54fcabc8b68d1",
+                                    "name": "lien_interne",
+                                    "label": "Lien interne",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_54fcabd2af361",
+                                            "label": "Lien interne",
+                                            "name": "lien_interne",
+                                            "prefix": "",
+                                            "type": "page_link",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "post_type": [
+                                                "tutoriaux",
+                                                "outils",
+                                                "projets",
+                                                "lexique"
+                                            ],
+                                            "taxonomy": "",
+                                            "allow_null": 0,
+                                            "multiple": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                {
+                                    "key": "54fcac08af362",
+                                    "name": "lien_externe",
+                                    "label": "Lien externe",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_54fcac14af363",
+                                            "label": "Lien externe",
+                                            "name": "lien_externe",
+                                            "prefix": "",
+                                            "type": "url",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-slider-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1425852686
+}

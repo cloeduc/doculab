@@ -1,0 +1,67 @@
+{
+    "key": "group_54f5ba9aa6f7f",
+    "title": "Licence contenu",
+    "fields": [
+        {
+            "key": "field_543bf8a62f87f",
+            "label": "La licence du contenu que vous produisez",
+            "name": "",
+            "prefix": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "L'int\u00e9gralit\u00e9 des textes pr\u00e9sent\u00e9s sur cette plateforme sont sous licence CC0, y compris ceux que vous produisez vous m\u00eame. Ils entrent dans le domaine publique et sont modifiables, r\u00e9cup\u00e9rables, r\u00e9utilisables \u00e0 volont\u00e9, partout dans le monde. Gardez cela en t\u00eate et faites attention \u00e0 ne pas copier\/coller des textes dont vous n'\u00eates pas l'auteur.",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "lexique"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tutoriaux"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "outils"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projets"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1425852761
+}

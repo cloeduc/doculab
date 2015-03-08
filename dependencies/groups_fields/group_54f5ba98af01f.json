@@ -1,0 +1,66 @@
+{
+    "key": "group_54f5ba98af01f",
+    "title": "Licence projet",
+    "fields": [
+        {
+            "key": "field_53a2a2b508b0d",
+            "label": "Choisir la licence de mon projet",
+            "name": "licence_projet",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "Attention, il faut qu'il reste disponible pour n'importe qui dans le monde, en conformit\u00e9 avec la charte des Fablabs et les conditions d'utilisation du Faclab",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "CC BY": "CC BY",
+                "CC BY-NC": "CC BY-NC",
+                "CC BY-SA": "CC BY-SA",
+                "CC BY-NC-SA": "CC BY-NC-SA",
+                "GNU GPL": "GNU GPL",
+                "Free to beer": "Free to beer"
+            },
+            "other_choice": 1,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical"
+        },
+        {
+            "key": "field_53a2a3891e25f",
+            "label": "Quelle licence choisir ?",
+            "name": "",
+            "prefix": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h2>Une licence mais pourquoi faire ?<\/h2>\r\nSelon le principe \"Participez, partagez, documentez\", vous devez laisser les plans et la documentation des projets que vous r\u00e9alisez au faclab. Cela ne veut pas dire que vous ne pouvez pas prot\u00e9ger votre travail. Prot\u00e9ger votre travail c'est d\u00e9finir un cadre dans lequel vous souhaitez qu'il puisse \u00eatre r\u00e9utilis\u00e9, am\u00e9lior\u00e9, exploit\u00e9...\r\n\r\n<h2>Comment choisir ma licence ?<\/h2>\r\nIl existe de nombreuses licences \"libres\" (qui offrent une protection de la propri\u00e9t\u00e9 intellectuelle, sans restreindre l'utilisation de votre projet.) Vous pouvez par exemple consulter le tr\u00e8s bon <a href=\"https:\/\/creativecommons.org\/choose\/\" target=\"_blank\">selecteur de licence \"Cr\u00e9atives Commons\"<\/a> \r\nSachez n\u00e9anmoins qu'il existe pleins d'autre licences, comme la \"Free to Beer\" (<i>\"Faites ce que vous voulez de mon projet, mais payez moi une bi\u00e8re \u00e0 l'occasion :)<\/i>\"). En cas de doutes, n'hesitez pas \u00e0 pauser la question aux fabmanagers.\r\nUn peu moins digeste, mais tout aussi instructif, <a href=\"http:\/\/freedomdefined.org\/OSHW\/translations\/fr\" target=\"_blank\"> une explication de l'Open-Hardware<\/a>, un principe qui s'applique aux objets physiques",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projets"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1425852654
+}

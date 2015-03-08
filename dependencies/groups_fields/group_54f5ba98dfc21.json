@@ -1,0 +1,103 @@
+{
+    "key": "group_54f5ba98dfc21",
+    "title": "Maintenance & consomables",
+    "fields": [
+        {
+            "key": "field_53ff5348894a2",
+            "label": "Entretiens de la machine",
+            "name": "entretiens_de_la_machine",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "tabs": "all"
+        },
+        {
+            "key": "field_53ff6748d0b7e",
+            "label": "Probl\u00e8mes rencontr\u00e9s",
+            "name": "problemes_rencontres",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "tabs": "all"
+        },
+        {
+            "key": "field_53ff53aa894a4",
+            "label": "Consommables",
+            "name": "consommables",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "tabs": "all"
+        },
+        {
+            "key": "field_53ff53bd894a5",
+            "label": "Am\u00e9liorations & bricolages",
+            "name": "ameliorations_&_bricolages",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "Elle marche cette machine, mais \u00e7a serait mieux si on ajoutait....",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "tabs": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "outils"
+            },
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:machines"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1425852661
+}

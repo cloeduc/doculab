@@ -1,0 +1,79 @@
+{
+    "key": "group_54f5ba9a558bd",
+    "title": "Ajouter des fichiers",
+    "fields": [
+        {
+            "key": "field_53b2ca6bc6ac7",
+            "label": "T\u00e9l\u00e9charger les sources",
+            "name": "_telecharger_les_sources",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "Ajoutez tous les fichiers sources de votre projet ci dessous",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Ajouter un fichier",
+            "min": 0,
+            "max": 0,
+            "sub_fields": [
+                {
+                    "key": "field_53b2ca8cc6ac8",
+                    "label": "Ajouter un fichier",
+                    "name": "_ajouter_un_fichier",
+                    "prefix": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "library": "all",
+                    "return_format": "array",
+                    "min_size": 0,
+                    "max_size": 0,
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projets"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tutoriaux"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "outils"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1425852743
+}

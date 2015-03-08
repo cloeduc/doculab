@@ -1,0 +1,94 @@
+{
+    "key": "group_54f5ba9a1fbb1",
+    "title": "\u00c9tapes",
+    "fields": [
+        {
+            "key": "field_53a06a1ab9c2c",
+            "label": "\u00c9tapes",
+            "name": "_etapes",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "row",
+            "button_label": "Ajouter une \u00e9tape",
+            "min": 0,
+            "max": 0,
+            "sub_fields": [
+                {
+                    "key": "field_53a06a36b9c2d",
+                    "label": "Titre de l'\u00e9tape",
+                    "name": "_titre_de_letape",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Par exemple :  Etape 1, r\u00e9alisation du fichier",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "html",
+                    "maxlength": 150,
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_53a06a64b9c2e",
+                    "label": "Description de l'\u00e9tape",
+                    "name": "_description_de_letape",
+                    "prefix": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "tabs": "all"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tutoriaux"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projets"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1425852712
+}

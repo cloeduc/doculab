@@ -1,0 +1,70 @@
+{
+    "key": "group_54f5ba985d1e5",
+    "title": "Configuration Homepage",
+    "fields": [
+        {
+            "key": "field_53a2ff1ea893c",
+            "label": "Mise en avant - Slideshow",
+            "name": "hp_sildeshow",
+            "prefix": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "object",
+            "post_type": [
+                "post",
+                "tutoriaux",
+                "outils",
+                "projets"
+            ],
+            "taxonomy": [
+
+            ],
+            "filters": [
+                "search"
+            ],
+            "max": 9,
+            "elements": [
+                "featured_image",
+                "post_type"
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "128"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "modified": 1425852635
+}

@@ -1,0 +1,108 @@
+{
+    "key": "group_54f5ba998653a",
+    "title": "Projets",
+    "fields": [
+        {
+            "key": "field_53a021787007c",
+            "label": "Statut",
+            "name": "_statut",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "on": "En cours",
+                "ended": "Termin\u00e9",
+                "paused": "En pause"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "En cours",
+            "layout": "vertical"
+        },
+        {
+            "key": "field_53a025ebd5185",
+            "label": "Difficult\u00e9",
+            "name": "_difficulte",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "easy": "D\u00e9butant",
+                "normal": "Normal",
+                "hard": "Expert"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical"
+        },
+        {
+            "key": "field_53a029f90f000",
+            "label": "Dur\u00e9e",
+            "name": "_duree",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "very_sort": "Tr\u00e8s court (moins d'un jour)",
+                "short": "Court (1 jour)",
+                "middle_time": "Moyen (3 jours)",
+                "long": "Long (7 jours)",
+                "very_long": "Tr\u00e8s Long (plus d'une semaine)"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projets"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "format",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "modified": 1425852695
+}

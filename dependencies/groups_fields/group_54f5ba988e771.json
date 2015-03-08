@@ -1,0 +1,51 @@
+{
+    "key": "group_54f5ba988e771",
+    "title": "Description de la cat\u00e9gorie",
+    "fields": [
+        {
+            "key": "field_53ff54666a817",
+            "label": "Fiche outil utilis\u00e9e pour d\u00e9crire cette cat\u00e9gorie",
+            "name": "cat_description",
+            "prefix": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "object",
+            "post_type": [
+                "outils"
+            ],
+            "taxonomy": [
+
+            ],
+            "filters": [
+                "search"
+            ],
+            "max": 1,
+            "elements": [
+                "post_type"
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "category:abs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1425852647
+}
