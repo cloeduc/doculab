@@ -60,17 +60,9 @@ if(is_home())
         </div>
     </div>
 <?php endif; ?>
-<?php if($sliders): ?>
-    <div id="max-height-contener">
-    <div id="home-slider" class="flexslider">
-        <ul class="slides">
-    <?php foreach ($sliders as $post): setup_postdata($post); ?>
-            <?php get_template_part('content', 'slider'); ?>
-    <?php endforeach; ?>
-        </ul>
-    </div>
-    </div>
-<?php endif; ?>
+<?php if (function_exists('display_slider')) : 
+    display_slider();
+endif;?>
  <?php wp_reset_query(); ?>
 <div id="content"<?php gridz_content_class(); ?> >
     <div class="wrapper">
