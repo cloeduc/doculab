@@ -14,9 +14,6 @@ get_header(); query_posts($oldquery);
 <?php endif; 
 ?>
 <div id="container">
-    <div id="filters">
-        <?php echo  do_shortcode('[ULWPQSF id=373]');?>
-    </div>
     <div id="grid-container">
 
         <?php if(have_posts()): ?>

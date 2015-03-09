@@ -71,15 +71,6 @@ function doculab_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'doculab_excerpt_more');
 
 remove_filter('excerpt_more', 'gridz_auto_excerpt_more');
-if ( function_exists ('register_sidebar')) {
-    register_sidebar (array(
-    'name'    => __( 'Author sidebar' ),
-    'id'      => 'sidebar-author',
-    'description'  => __( 'Sidebar de la page auteur.' ),
-    'before_title' => '<h1>',
-    'after_title'  => '</h1>',
-)); 
-}
 
 add_image_size( 'gridz-featured', '800', '400', true );
 add_image_size( 'gridz-slider', '640', '640', true );
