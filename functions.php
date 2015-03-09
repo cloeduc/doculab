@@ -1,5 +1,5 @@
 <?php 
-
+//First desactive comments
 require_once ('dependencies/types/tutoriaux.php');
 require_once ('dependencies/types/projets.php');
 require_once ('dependencies/types/outils.php');
@@ -8,9 +8,21 @@ require_once ('dependencies/types/lexique.php');
 require_once ('dependencies/class-tgm-plugin-activation.php');
 require_once ('dependencies/register-acf-fields.php');
 require_once ('dependencies/check_dependencies.php');
-/**
- * Register sidebars and widgetized areas
- */
+
+function example_disable_all_comments_and_pings() {
+
+	// Turn off comments
+	if( '' != get_option( 'default_ping_status' ) ) {
+		update_option( 'default_ping_status', '' );
+	} // end if
+
+	// Turn off pings
+	if( '' != get_option( 'default_comment_status' ) ) {
+		update_option( 'default_comment_status', '' );
+	} // end if
+
+} // end example_disable_all_comments_and_pings
+add_action( 'after_setup_theme', 'example_disable_all_comments_and_pings' );
 
 /*
 Creates menu navigation
@@ -59,12 +71,11 @@ function doculab_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'doculab_excerpt_more');
 
 remove_filter('excerpt_more', 'gridz_auto_excerpt_more');
-
-if ( function_exists ('register_sidebar')) { 
+if ( function_exists ('register_sidebar')) {
     register_sidebar (array(
     'name'    => __( 'Author sidebar' ),
     'id'      => 'sidebar-author',
-    'description'  => __( 'Sidebar de la parge auteur.' ),
+    'description'  => __( 'Sidebar de la page auteur.' ),
     'before_title' => '<h1>',
     'after_title'  => '</h1>',
 )); 

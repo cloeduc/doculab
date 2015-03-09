@@ -10,6 +10,7 @@
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
             <?php get_template_part('content', 'step-by-step'); ?>
+            <?php comments_template(); ?>
         <?php endwhile; ?>        
     <?php else : ?>
     	<div id="container">   
