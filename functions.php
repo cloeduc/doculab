@@ -1,5 +1,5 @@
 <?php 
-CONST CONF_PAGE = 128;
+
 require_once ('dependencies/types/tutoriaux.php');
 require_once ('dependencies/types/projets.php');
 require_once ('dependencies/types/outils.php');
@@ -11,6 +11,47 @@ require_once ('dependencies/check_dependencies.php');
 /**
  * Register sidebars and widgetized areas
  */
+
+/*
+Creates menu navigation
+*/
+unregister_nav_menu('primary');
+
+function register_my_menu() {
+	$run_once = get_option('menu_check');
+    $connexionpage = get_option(OPTION_LOGIN_PAGE_NAME);
+    $howtocontribute_id = get_option(CDTOOLS_PLUGIN_OPTION_PAGE_NAME);
+
+	if (!$run_once){
+	    //give your menu a name
+	    $name = 'Primary Menu';
+	    //create the menu
+	    $menu_id = wp_create_nav_menu($name);
+
+	    //then get the menu object by its name
+	    $menu = get_term_by( 'name', $name, 'nav_menu' );
+	    wp_update_nav_menu_item($menu->term_id, 0, array(
+	        'menu-item-title' =>  __('Comment contribuer ?'),
+	        'menu-item-classes' => 'how-to-contribute',
+	        'menu-item-url' => get_the_permalink($howtocontribute_id), 
+	        'menu-item-status' => 'publish'));
+	    //then add the actuall link/ menu item and you do this for each item you want to add
+	    wp_update_nav_menu_item($menu->term_id, 0, array(
+	        'menu-item-title' =>  __('Documenter !'),
+	        'menu-item-classes' => 'connexion connexion-button',
+	        'menu-item-url' => admin_url(), 
+	        'menu-item-status' => 'publish'));
+
+	    //then you set the wanted theme  location
+	    $locations = get_theme_mod('nav_menu_locations');
+	    $locations['main-menu'] = $menu->term_id;
+	    set_theme_mod( 'nav_menu_locations', $locations );
+
+	    // then update the menu_check option to make sure this code only runs once
+	    update_option('menu_check', true);
+	}
+}
+add_action( 'init', 'register_my_menu' );
 
 function doculab_excerpt_more( $more ) {
 	return '<a href="'. get_the_permalink() .'" class="read-more"> <span class="genericon-next"></span></a>';
@@ -55,6 +96,8 @@ function get_sentence($key)
 		);
 	echo (isset($sentences[$key]))? $sentences[$key] : $key;
 }
+
+
 
 /**
  * Load javascripts used by the theme

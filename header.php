@@ -45,7 +45,7 @@
 </header>
 <nav id="navigation">
     <div class="wrapper">
-        <?php wp_nav_menu(array('theme_location' => 'primary', 'container_class' => 'primary-menu clearfix')); ?>
+        <?php wp_nav_menu(array('theme_location' => 'main-menu', 'container_class' => 'primary-menu clearfix')); ?>
     </div>
 </nav>
 <?php gridz_responsive_menu(); ?>

@@ -48,9 +48,6 @@ jQuery("document").ready(function($){
         }
       });
     });
-  	$('#menu-item-135').click(function(){
-  		$('#explorenav').slideToggle();
-  	});
   	$("#contribuer").click(function(){
   			if(jQuery('#middleheader').exists()) {
   				jQuery('html,body').animate({scrollTop:jQuery('#header').offset().top}, 1000);
