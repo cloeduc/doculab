@@ -2,10 +2,6 @@
 /**
  * @package doculab
  */
-if(is_home())
-{
-    $sliders = get_field('hp_sildeshow', CONF_PAGE);
-}
 ?>
 <!DOCTYPE html>
 <!--[if IE 6]>

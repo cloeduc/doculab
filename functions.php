@@ -5,6 +5,7 @@ require_once ('dependencies/types/projets.php');
 require_once ('dependencies/types/outils.php');
 require_once ('dependencies/types/lexique.php');
 
+require_once ('dependencies/class-tgm-plugin-activation.php');
 require_once ('dependencies/register-acf-fields.php');
 require_once ('dependencies/check_dependencies.php');
 /**
@@ -87,11 +88,13 @@ add_action('wp_enqueue_scripts', 'custom_theme_css');
 
 function display_slider()
 {
-	$display_options = get_field('afficher_le_slider', 'option');
-	if((in_array('home_page', $display_options) && is_home()) OR (in_array('page', $display_options) && is_page()) OR (in_array('post', $display_options) && is_single()))
-	{
-		$slides = get_field('slides', 'option');
-		include ('slider.php');
+	if(function_exists('get_field')) {
+		$display_options = get_field('afficher_le_slider', 'option');
+		if(is_array($display_options)and ((in_array('home_page', $display_options) && is_home()) OR (in_array('page', $display_options) && is_page()) OR (in_array('post', $display_options) && is_single())))
+		{
+			$slides = get_field('slides', 'option');
+			include ('slider.php');
+		}
 	}
 }
 /**

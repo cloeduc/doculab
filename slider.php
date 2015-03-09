@@ -25,7 +25,6 @@ if($slides): ?>
 		            <?php echo $description ?>
 		            <a class="more-link last" href="<?php echo $url; ?>">Lire la suite…</a>
 		        </div>
-		        
 		    </article>
 		</li>
     <?php endforeach; ?>
