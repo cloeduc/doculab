@@ -9,47 +9,6 @@ require_once ('dependencies/class-tgm-plugin-activation.php');
 require_once ('dependencies/register-acf-fields.php');
 require_once ('dependencies/check_dependencies.php');
 
-function add_roles_on_plugin_activation() {
-	$capabilities = array( 
-		'read' => true, 
-		'level_0' => true,
-		'delete_published_posts' => true,
-		'edit_posts' => true,
-		'edit_private_posts' => true,
-		'edit_published_posts' => true,
-		'publish_posts' => true,
-		'read_private_posts' => true,
-		'unfiltered_upload' => true,
-		'upload_files' => true,
-		'delete_lexique' => true,
-		'delete_others_lexique' => true,
- 		'delete_others_tools' => true,
- 		'delete_private_lexique' => true,
-		 'delete_private_tools' => true,
-		 'delete_published_lexique' => true,
-		 'delete_published_tools' => true,
-		 'delete_tools'=> true,
-		 'edit_lexique' => true,
-		 'edit_others_lexique' => true,
-		 'edit_others_tools' => true,
-		  'edit_private_lexique' => true,
-		 'edit_private_tools' => true,
-		 'edit_published_lexique' => true,
-		 'edit_published_tools' => true,
-		 'edit_tools' => true,
-		 'list_roles' => true,
-		'publish_lexique' => true,
-		 'publish_tools' => true,
-		 'read_lexique' => true,
-		 'read_private_lexique' => true,
-		 'read_private_tools' => true,
-		 'read_tools' => true,
-		 ); 
-   add_role( 'faclabuser', 'FabLab User', $capabilities );
-}
-register_activation_hook( __FILE__, 'add_roles_on_plugin_activation' );
-
-
 function example_disable_all_comments_and_pings() {
 
 	// Turn off comments
