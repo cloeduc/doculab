@@ -277,7 +277,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-slider-options"
+                "value": "acf-options-gestion-du-slider"
             }
         ]
     ],
@@ -287,5 +287,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1425852686
+    "modified": 1426028951
 }

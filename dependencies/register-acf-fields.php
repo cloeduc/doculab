@@ -3,7 +3,13 @@
 // le plugin option page est configuré
 if(function_exists('acf_add_options_page')):
 	//la page d'option n'existe pas
-	acf_add_options_page('Slider options');
+	acf_add_options_page(array(
+		'page_title' 	=> 'Gestion du slider',
+		'menu_title' 	=> 'Gestion du slider',
+		'position' => 3,
+		'icon_url' => 'dashicons-slides'
+	));
+
 endif;
 
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
