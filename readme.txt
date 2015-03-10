@@ -58,7 +58,7 @@ Se rendre sur l'inspecteur de dépendance qui a été activé en même temps que
 
 Ces plugins sont soient requis, soit très conseillés pour que le système fonctionne de façon optimal : 
 
-	Apparence > Installer les plugins
+    Apparence > Installer les plugins
 Installer ensuite chaque plugin souhaité en cliquant sur "Install" (au survol du plugin).
 Penser à activer les plugins une fois ceux ci installés.
 #### Descriptif des plugins requis :
@@ -68,11 +68,17 @@ Les plugins CD-tools sont des petites compositions thématiques composées de di
 Créer une formulaire de connexion, d'inscription et de récupération de mots de passe, puis l'affiche dans le menu principal du site.
 ###### CDTools Custom Admin
 ###### CD Tools How To Contribute
-###### 	CDTools Main Query Post
+######  CDTools Main Query Post
 ###### CDTools Manager Supported File Type
 ##### Advenced Custom Fields **PRO**
 > Le choix a été fait d'utiliser le plugin "pro" qui nécessite l'achat d'une licence et étends les fonctionnalités du plugin gratuit.   Ce **plugin premium est indispensable** au bon fonctionnement du système.
 > http://www.advancedcustomfields.com/
+
+**Syncronisation d'ACF Pro** : 
+ACF rajoute des champs supplémentaires très variés à l'interface wordpress basique. Cette configuration est inclue dans les dépendances du thème "doculab" mais doit passer par une option de synchronisation pour être éditable sur une nouvelle instance. Pour cela se rendre sur la gestion du plugin ACF. Un onglet "Sync Available" est disponible dans l'interface. Il suffit de synchroniser chaque configuration souhaitée.
+http://www.advancedcustomfields.com/blog/acf-pro-v5-1-5-update/
+A noter que le fait de ne pas effectuer cette synchronisation n'empêchera pas l'interface de s'ajuster.
+
 ##### Itheme Security
 Ce plugin indispensable permet de sécuriser son installation Wordpress à l'aide de trucs et astuces plus ou moins poussés. Il dispose d'un outil d'analyse de sécurité de l'installation poussé. 
 Lors de la première visite sur le plugin activé, il vous est proposé un certain nombre d'actions. Il est plus que conseillé d'effectuer un "**One-Click Secure**" 
@@ -85,13 +91,13 @@ Lors de la première visite sur le plugin activé, il vous est proposé un certa
 ##### Auto Upload Images 
 ##### Advanced Custom Fields - Taxonomy Field add-on 
 ##### Private Messages For WordPress 
-##### 	Simple Image Sizes
+#####   Simple Image Sizes
 ##### Sweet Custom Dashboard 
 ##### WP User Avatar 
 ##### Confirm User Registration 
 ##### Random Post Widget 
 ##### Simple Custom Post Types 
-##### 	TinyMCE Advanced 
+#####   TinyMCE Advanced 
 ##### User Role Editor
 ##### WP Password Generator
 ##### WP-DBManager 
@@ -140,3 +146,4 @@ En l'occurence, sur le site doc.faclab.org, nous avons ajouté :
 >  Le widget "Random Post" qui permet de remonter automatiquement certaines ressources au hasard de la plateforme.
 
 C'est à vous de configurer et de décider de la façon dont vous souhaitez configurer ces menus.
+
