@@ -76,6 +76,12 @@ function check_dependencies() {
             'force_deactivation' => false, 
             'external_url'  => 'http://www.advancedcustomfields.com/', 
         ),
+        array(
+            'name' => 'Random Post Widget',
+            'slug' => 'random-post-widget',
+            'source'        => get_stylesheet_directory() . '/dependencies/plugins/random-post-widget.zip', 
+            'required'  => false,
+        ),
         //requis
         array('name'    => 'Private Messages For WordPress', 'slug' => 'private-messages-for-wordpress', 'required'  => true),
         array('name'    => 'WP User Avatar', 'slug' => 'wp-user-avatar', 'required'  => true),
@@ -119,11 +125,6 @@ function check_dependencies() {
         array(
             'name' => 'Simple Custom Post Types',
             'slug' => 'simple-custom-types',
-            'required'  => false,
-        ),
-        array(
-            'name' => 'Random Post Widget',
-            'slug' => 'random-post-widget',
             'required'  => false,
         ),
 );
