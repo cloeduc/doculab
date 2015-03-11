@@ -4,10 +4,7 @@
 Le thème doculab est une boite à outil à destination de tout lieu contributif à la recherche d'une solution de documentation relativement accessible à tous.
 
 
-----------
-
 ##Démarche initiale
--------------
 
 Pour commencer quelques éléments de contexte concernant le développement de cet outil.  Il a été mis en place au [FacLab](doc.faclab.org) en remplacement du [wiki](wiki.faclab.org). L'idée était de permettre une prise en main plus simple de la plateforme de contribution avec une plus grande place offerte aux images et à a mise en page.
 
@@ -28,6 +25,8 @@ Télécharger le thème "gridz" : https://wordpress.org/themes/gridz/
 A noter que le thème est pre-packagé  dans le thème doculab :
 
     /dependencies/gridz.1.0.5.zip
+
+----------
 
 ##Installation du thème "Doculab"
 
@@ -51,7 +50,8 @@ Voila, le thème est activé : nous verrons par la suite comment configurer le t
 > Un certain nombre de plugins "requis" pour que le thème fonctionne au mieu. Pour les activer, suivre la procédure suivante : 
 
 Se rendre sur l'inspecteur de dépendance qui a été activé en même temps que le plugin (vous devez avoir une belle notice en haut de votre espace d'administration qui vous indique que plein de choses sont en attente d'être installé) :
-> This theme requires the following plugins: Admin Menu Editor, Advanced Custom Fields - Taxonomy Field add-on, Advanced Custom Fields Pro, Auto Upload Images, CDTools Clean Login, CDTools Custom Admin, CDTools How To Contribute, CDTools Main Query Post, CDTools Manager Supported File Type, Co-Authors Plus, Minimum Password Strength, Private Messages For WordPress, Simple Image Sizes, Sweet Custom Dashboard, WP User Avatar and iThemes Security.
+> This theme requires the following plugins[...]
+>Sizes, Sweet Custom Dashboard, WP User Avatar and iThemes Security.
 
 > This theme recommends the following plugins: Advanced Custom Fields: Date and Time Picker, Confirm User Registration, Random Post Widget, Simple Custom Post Types, TinyMCE Advanced, User Role Editor, WP Password Generator, WP-DBManager and Wp Lightbox Bank Standard Edition.
 
@@ -61,16 +61,19 @@ Ces plugins sont soient requis, soit très conseillés pour que le système fonc
     Apparence > Installer les plugins
 Installer ensuite chaque plugin souhaité en cliquant sur "Install" (au survol du plugin).
 Penser à activer les plugins une fois ceux ci installés.
-#### Descriptif des plugins requis :
-##### Plugins CD Tools : 
+### Descriptif des plugins requis :
+#### Plugins CD Tools : 
 Les plugins CD-tools sont des petites compositions thématiques composées de divers "hacks" connus de Wordpress.
-###### CDTools Clean Login
+##### CDTools Clean Login
 Créer une formulaire de connexion, d'inscription et de récupération de mots de passe, puis l'affiche dans le menu principal du site.
-###### CDTools Custom Admin
-###### CD Tools How To Contribute
-######  CDTools Main Query Post
-###### CDTools Manager Supported File Type
-##### Advenced Custom Fields **PRO**
+##### CDTools Custom Admin
+Permet de gérer des petites astuces pour cachers certaines partie de l'administration aux utilisateurs (ce qui facilite la lecture de l'interface de contribution)
+##### CDTools Default Configuration
+Bon format des permaliens, création du role "Fabuser", autorisation des inscriptions... etc.
+##### CD Tools How To Contribute
+#####  CDTools Main Query Post
+##### CDTools Manager Supported File Type
+#### Advenced Custom Fields **PRO**
 > Le choix a été fait d'utiliser le plugin "pro" qui nécessite l'achat d'une licence et étends les fonctionnalités du plugin gratuit.   Ce **plugin premium est indispensable** au bon fonctionnement du système.
 > http://www.advancedcustomfields.com/
 
@@ -79,29 +82,12 @@ ACF rajoute des champs supplémentaires très variés à l'interface wordpress b
 http://www.advancedcustomfields.com/blog/acf-pro-v5-1-5-update/
 A noter que le fait de ne pas effectuer cette synchronisation n'empêchera pas l'interface de s'ajuster.
 
-##### Itheme Security
+#### Itheme Security
 Ce plugin indispensable permet de sécuriser son installation Wordpress à l'aide de trucs et astuces plus ou moins poussés. Il dispose d'un outil d'analyse de sécurité de l'installation poussé. 
 Lors de la première visite sur le plugin activé, il vous est proposé un certain nombre d'actions. Il est plus que conseillé d'effectuer un "**One-Click Secure**" 
 
-#### Descriptif des plugins conseillés :
-##### Advanced Custom Fields: Date and Time Picker 
-##### Admin menu Editor 
-##### Co-Authors Plus 
-##### Minimum Password Strength 
-##### Auto Upload Images 
-##### Advanced Custom Fields - Taxonomy Field add-on 
-##### Private Messages For WordPress 
-#####   Simple Image Sizes
-##### Sweet Custom Dashboard 
-##### WP User Avatar 
-##### Confirm User Registration 
-##### Random Post Widget 
-##### Simple Custom Post Types 
-#####   TinyMCE Advanced 
-##### User Role Editor
-##### WP Password Generator
-##### WP-DBManager 
-##### Wp Lightbox Bank Standard Edition 
+----------
+
 ##Configuration du thème
 Une fois chaque plugins installés, il faut ensuite passer par la configuration de la plateforme. 
 ### Configuration de l'affichage
@@ -112,19 +98,18 @@ Pour configurer le thème :
 Vous pouvez ici choisir les couleurs et logos qui s'afficheront en en-tête du site. Mais il est aussi possible de changer le mode d'affichage du site, et c'est ce qui va nous intéresser.
 Le thème "DocuLab" n'a été conçu (mal codé, plus exactement) que pour ne fonctionner sous une seule configuration d'affichage de son thème parent. **C'est un point à améliorer, bien évidement.**
 #### Configuration optimale de l'affichage :
-> ###Doculab Theme Option :
-> #### Fonts & Colors :
-> > A votre convenance
-> ####  Logo et favicon
-> > A votre convenance
-> ####  Homepage
-> > Number of grid columns : 3
-> > Show sidebar along with masonry : check
-> #### Post Settings
->> Sidebar Layout : right (première miniature)
->> Show Categories : check
->> Show Tags : uncheck
->> Show Post Navigation : check
+
+    Doculab Theme Option :
+        Fonts & Colors : A votre convenance
+        Logo et favicon : A votre convenance
+        Homepage
+            Number of grid columns : 3
+            Show sidebar along with masonry : check
+        Post Settings
+            Sidebar Layout : right (première miniature)
+            Show Categories : check
+            Show Tags : uncheck
+            Show Post Navigation : check
 
 ### Configuration des menus
 De base le thème créer un "main-menu" qui va afficher le bouton de connexion (ne pas y toucher) et le lien vers la page "comment contribuer". Vous pouvez éditer et améliorer ce menu dans : 
@@ -147,3 +132,24 @@ En l'occurence, sur le site doc.faclab.org, nous avons ajouté :
 
 C'est à vous de configurer et de décider de la façon dont vous souhaitez configurer ces menus.
 
+----------
+
+## Descriptif des plugins conseillés :
+##### Advanced Custom Fields: Date and Time Picker 
+##### Admin menu Editor 
+##### Co-Authors Plus 
+##### Minimum Password Strength 
+##### Auto Upload Images 
+##### Advanced Custom Fields - Taxonomy Field add-on 
+##### Private Messages For WordPress 
+#####   Simple Image Sizes
+##### Sweet Custom Dashboard 
+##### WP User Avatar 
+##### Confirm User Registration 
+##### Random Post Widget 
+##### Simple Custom Post Types 
+#####   TinyMCE Advanced 
+##### User Role Editor
+##### WP Password Generator
+##### WP-DBManager 
+##### Wp Lightbox Bank Standard Edition 
