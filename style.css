@@ -95,7 +95,7 @@ header#header .wrapper {
 	color:#fff;
 }
 
-article.tutoriaux, article.outils, article.projets, article.lexiques { 
+article.tutoriaux, article.outils, article.projets, article.lexiques, article.lab { 
 	background-color: #fff;  margin-bottom: 30px; -moz-box-shadow: 0 1px rgba(0,0,0,0.2); -webkit-box-shadow: 0 1px rgba(0,0,0,0.2); box-shadow: 0 1px rgba(0,0,0,0.2); overflow: hidden; clear: both; display: block; }
 
 .widget_ultimate_posts .upw-image {
