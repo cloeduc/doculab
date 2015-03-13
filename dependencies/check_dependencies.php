@@ -57,6 +57,15 @@ function check_dependencies() {
             'external_url'  => 'https://github.com/cloeduc/wpcdtools-manage_suported_file_type', 
         ),
         array(
+            'name'          => 'CDTools Load Default Config', 
+            'slug'          => 'cdtools-default-configuration', 
+            'source'        => get_stylesheet_directory() . '/dependencies/plugins/cdtools-default-configuration.zip',
+            'required'      => true, 
+            'version'       => '', 
+            'force_activation'   => false, 
+            'force_deactivation' => false, 
+        ),
+        array(
             'name'          => 'Sweet Custom Dashboard', 
             'slug'          => 'sweet-custom-dashboard', 
             'source'        => get_stylesheet_directory() . '/dependencies/plugins/sweet-custom-dashboard.zip', 
