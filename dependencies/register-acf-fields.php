@@ -6,7 +6,7 @@ if(function_exists('acf_add_options_page')):
 	acf_add_options_page(array(
 		'page_title' 	=> 'Gestion du slider',
 		'menu_title' 	=> 'Gestion du slider',
-		'position' => 3,
+		'position' => 4,
 		'icon_url' => 'dashicons-slides'
 	));
 

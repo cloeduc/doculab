@@ -68,7 +68,7 @@ register_post_type( "lab", array (
   array (
   ),
   'show_ui' => true,
-  'menu_position' => 5,
+  'menu_position' => 10,
   'menu_icon' => 'dashicons-admin-settings',
   'can_export' => true,
   'show_in_nav_menus' => true,

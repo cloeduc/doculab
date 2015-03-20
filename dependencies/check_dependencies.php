@@ -99,13 +99,13 @@ function check_dependencies() {
         array('name'    => 'iThemes Security', 'slug' => 'better-wp-security', 'required'  => true),
         array('name'    => 'Auto Upload Images', 'slug' => 'auto-upload-images', 'required'  => true),
         array('name'    => 'Advanced Custom Fields - Taxonomy Field add-on', 'slug' => 'advanced-custom-fields-taxonomy-field-add-on', 'required'  => true),
-        array('name' => 'Admin Menu Editor','slug' => 'admin-menu-editor', 'required'  => true),
         // This is an example of how to include a plugin from the WordPress Plugin Repository.
          array('name' => 'Advanced Custom Fields: Date and Time Picker', 'slug' => 'acf-field-date-time-picker','required'  => false),
         array('name' => 'Confirm User Registration', 'slug' => 'confirm-user-registration','required'  => false,
         ),
         array('name' => 'WP Password Generator','slug' => 'wp-password-generator','required'  => false,
         ),
+        array('name' => 'Admin Menu Editor','slug' => 'admin-menu-editor', 'required'  => false),
         array(
             'name' => 'Simple Image Sizes',
             'slug' => 'simple-image-sizes',
