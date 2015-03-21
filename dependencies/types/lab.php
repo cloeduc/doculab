@@ -63,6 +63,7 @@ register_post_type( "lab", array (
   array (
     0 => 'title',
     1 => 'editor',
+    2 => 'thumbnail',
   ),
   'taxonomies' => 
   array (

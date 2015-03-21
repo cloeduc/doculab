@@ -8,6 +8,7 @@ $ressources = get_field('ressources_en_ligne');
 $duree = get_field('_duree');
 $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'gridz-slider' );
 ?>
+<?php if(get_the_category() or $steps or $sources): ?>
 <div id="secondary" class="stepbystep widget-area widget-area-right">
 	<?php if($steps):?>
 		<aside class="widget">
@@ -20,7 +21,7 @@ $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID
 			</ol>
 		</aside>
 	<?php endif; ?>
-	
+	<?php if(get_the_category()): ?>
 	<aside class="widget">
 	<h1>Sujets liés à ce projet : </h1>
 		<ul class="widget_nav_menu widget_nav_tags ">
@@ -33,6 +34,7 @@ $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID
 			<a href="#ressources" class="sub-nav-button scroll-to">Ressources externes</a>
 		<?php endif; ?>
 	</aside>
+<?php endif; ?>
 	<?php if($sources):?>
 		<aside class="widget">
 		<h1> Sources à télécharger :</h1>
@@ -50,8 +52,8 @@ $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID
 			</ol>
 		</aside>
 	<?php endif; ?>
-
 </div>
+<?php endif ?>
 <div id="container" class="three-column">
 	<article class="top-article" style="background-image:url('<?php echo $large_image_url[0] ?>')<?php if($large_image_url[1] < 300): echo ';background-size:contain;'; endif?>">
 	    <header class="entry-header" >

@@ -109,7 +109,7 @@ function check_dependencies() {
         array(
             'name' => 'Simple Image Sizes',
             'slug' => 'simple-image-sizes',
-            'required'  => true,
+            'required'  => false,
         ),
         array(
             'name' => 'Wp Lightbox Bank Standard Edition',
