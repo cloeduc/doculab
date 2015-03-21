@@ -5,7 +5,7 @@
 ?>
 <?php global $gridz_options; 
 $oldquery = $wp_query->query_vars;
-$oldquery['post_type'] = array( 'post', 'projets', 'tutoriaux', 'outils' );
+$oldquery['post_type'] = array( 'post', 'projets', 'tutoriaux', 'outils', 'lab' );
 
 get_header(); query_posts($oldquery);
 ?>

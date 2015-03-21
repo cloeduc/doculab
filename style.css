@@ -617,3 +617,15 @@ float:left;
 margin-right: 10px;
 margin-bottom: 10px;
 } 
+#send-form label {
+	display: block;
+	padding: 5px 0px;
+	font-weight: bold;
+}
+#send-form input, #send-form textarea {
+	width: 80%;
+  	margin-bottom: 10px;
+}
+#send-form textarea {
+	height: 100px;
+}
